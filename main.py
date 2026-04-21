@@ -13,8 +13,8 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .database import engine, Base
-from .routers  import notes_router, tags_router
+from database import engine, Base
+from routers  import notes_router, tags_router
 
 
 # ── Create all tables on startup ──────────────────────────────────────────────
