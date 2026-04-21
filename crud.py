@@ -9,8 +9,8 @@ from typing import List, Optional, Tuple
 from sqlalchemy import func, text
 from sqlalchemy.orm import Session
 
-from . import models, schemas
-from .markdown_utils import render_markdown
+from .import models, schemas
+from markdown_utils import render_markdown
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
