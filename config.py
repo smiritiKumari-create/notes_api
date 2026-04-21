@@ -1,7 +1,7 @@
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    DATABASE_URL: str = "mysql+pymysql://root:deeps%40simi@localhost:3306/notes_db"
+    DATABASE_URL: str
     APP_ENV: str = "development"
 
     class Config:
