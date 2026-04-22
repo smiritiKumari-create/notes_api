@@ -4,7 +4,7 @@ from sqlalchemy import (
     Table, ForeignKey, Index,
 )
 from sqlalchemy.orm import relationship
-from .database import Base
+from database import Base
 
 # ─── Association table (Note ↔ Tag) ──────────────────────────────────────────
 note_tag_association = Table(

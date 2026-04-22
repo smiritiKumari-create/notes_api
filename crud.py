@@ -9,7 +9,7 @@ from typing import List, Optional, Tuple
 from sqlalchemy import func, text
 from sqlalchemy.orm import Session
 
-from .import models, schemas
+import models, schemas
 from markdown_utils import render_markdown
 
 
@@ -125,7 +125,6 @@ def list_notes(
 
     # ── Full-text search ──────────────────────────────────────────────────────
     if search:
-        # MATCH … AGAINST with IN BOOLEAN MODE allows partial words (*) and phrases
         ft_expr = text(
             "MATCH(notes.title, notes.body) AGAINST (:q IN BOOLEAN MODE)"
         ).bindparams(q=search)

@@ -2,7 +2,7 @@
 Notes API — FastAPI + MySQL + SQLAlchemy
 ----------------------------------------
 Run locally:
-    uvicorn notes_api.main:app --reload
+    uvicorn main:app --reload
 
 Interactive docs:
     http://127.0.0.1:8000/docs   (Swagger UI)
